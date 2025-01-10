@@ -9,6 +9,8 @@ import Success from "../components/mdx/Success.astro";
 import Warning from "../components/mdx/Warning.astro";
 import TimeLine from "../components/mdx/TimeLine.astro";
 import LinkCard from "../components/mdx/LinkCard.astro";
+import Playlist from "../components/mdx/Playlist.jsx";
+import Muisc from "../components/mdx/MusicPlaylist.astro";
 
 <BaseLayout title="Home">
   <BaseCard title="Home">
@@ -17,56 +19,7 @@ import LinkCard from "../components/mdx/LinkCard.astro";
 ---
 
 ## 欢迎来到我的博客
-### 🧊 Frosti
-
-**A clean, elegant, and fast static blog template! 🚀 Developed with [Astro](https://astro.build/)!**
-
-[**🖥️ Frosti Demo**](https://frosti.saroprock.com)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏 Chinese README**](https://github.com/EveSunMaple/Frosti/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**❤️ My Blog**](https://www.saroprock.com)
-
-### Why Choose Frosti?
-
-- **Lightning-fast Access Speed and Excellent SEO**: Your blog content spreads quickly and efficiently.
-- **View Transition Animations**: Smooth visual experience with Swup.
-- **Integrated Sidebar**: Includes social info cards, theme switch, back-to-top button, and persistent article directory.
-- **Powerful Search Functionality**: Easily search articles using pagefind.
-- **Day/Night Mode**: Adapt to different reading environments.
-- **Rich Components**: Collapsible pages, link cards, timeline components, various alerts, code block copy button, image comparison, and end-of-article copyright information.
-- **Comment System**: Built with [Waline](https://waline.js.org/) for interactive discussions.
-- **Responsive Design**: Crafted with [Tailwind CSS](https://tailwindcss.com/) and [daisyUI](https://daisyui.com/) to fit different devices.
-
-### Feature Highlights
-
-- **Easy Installation and Use**: Install with just one command, customize everything in `consts.ts`.
-- **Variety of Article Components**: Enhance the presentation of your blog content.
-
-### How to Get Started?
-
-1. **Install Frosti**
-
-   Simply run the following command in your terminal:
-
-   ```sh
-   npm create astro@latest -- --template EveSunMaple/Frosti
-   ```
-
-2. **Configure the Comment System**
-
-   Set up [Waline](https://waline.js.org/) to enable comments. Check `src\components\Comment.astro` for details.
-
-### Future Plans
-
-- **Integrate Headless CMS**.
-- **Fix Known Style Bugs**.
-- **More Features Coming Soon...**
-
-### Special Thanks
-
-A big thanks to @[Saicaca](https://github.com/saicaca) and @[WRXinYue](https://github.com/WRXinYue) for their inspiration and help with Frosti.
-
-### Star History
-
-![Star History Chart](https://api.star-history.com/svg?repos=EveSunMaple/Frosti&type=Date)
-
-
+### 我喜欢的音乐🎵
+<Muisc />
   </BaseCard>
 </BaseLayout>

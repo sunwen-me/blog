@@ -1,0 +1,112 @@
+
+
+
+
+
+---
+const songs = [
+  { title: 'Song 1', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+  { title: 'Song 2', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+  { title: 'Song 3', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' }
+];
+---
+
+<style>
+
+
+  .player {
+    background-color: #676767;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+  .player h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  audio {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .song-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left; /* 左对齐文本 */
+  }
+
+  .song-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .song-item:hover {
+    background-color: #e0e0e0;
+  }
+
+  .song-item.active {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .alert {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .alert:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<script>
+    const audioPlayer = document.getElementById('audio-player');
+    const songItems = document.querySelectorAll('.song-item');
+    let currentSongIndex = 0;
+  
+    // 确保 audioPlayer 存在
+    if (audioPlayer) {
+      // 播放选定的歌曲
+      songItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          audioPlayer.src = item.getAttribute('data-url');
+          audioPlayer.play();
+          songItems.forEach(song => song.classList.remove('active')); // 移除所有歌曲的激活样式
+          item.classList.add('active'); // 激活当前歌曲
+        });
+      });
+    } else {
+      console.error("Audio player not found!");
+    }
+  </script>
+  
+
+<div class="player">
+  <audio id="audio-player" controls>
+    <source src={songs[0].url} type="audio/mp3" />
+  </audio>
+  <ul class="song-list">
+    {songs.map((song, index) => (
+      <li class="song-item" data-url={song.url} key={index}>
+        {song.title}
+      </li>
+    ))}
+  </ul>
+</div>

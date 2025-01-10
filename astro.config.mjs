@@ -21,7 +21,7 @@ import { remarkAddAnchor } from "./src/plugins/remark-add-anchor.mjs";
 import { remarkHeadingExtractor } from "./src/plugins/remark-heading-extractor.mjs";
 
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
-
+import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: USER_SITE,
@@ -31,7 +31,7 @@ export default defineConfig({
       includePaths: ["./src/styles"],
     },
   },
-  integrations: [mdx(), icon({
+  integrations: [react(),mdx(), icon({
     include: {
       mdi: ["*"], // (Default) Loads entire Material Design Icon set
     },
