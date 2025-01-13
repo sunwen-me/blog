@@ -33,7 +33,9 @@ source install/local_setup.bash
 
 > 这一步需要从github下载大量的源码，不使用代理速度很慢，失败率也很高，建议开启下代理。失败后下次生成会提示firmware已经存在，要rm这个文件夹。
 
-`ros2 run micro_ros_setup create_firmware_ws.sh generate_lib`
+```
+ros2 run micro_ros_setup create_firmware_ws.sh generate_lib
+```
 
 # 自定义消息类型
 
