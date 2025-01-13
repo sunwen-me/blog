@@ -11,7 +11,7 @@ export const DATE_FORMAT = "ddd MMM DD YYYY";
 // User profile information
 export const USER_NAME = "sunwen";
 export const USER_SITE = "https://tosb.cn"; // At the same time, this is also the site retrieved by the i18n configuration.
-export const USER_AVATAR = "/profile.webp";
+export const USER_AVATAR = "/fvc.webp";
 
 // Server and transition settings
 export const SERVER_URL = "https://demo.tosb.cn";

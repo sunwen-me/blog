@@ -1,15 +1,15 @@
 ---
-title: "micro-ros-stm32"
+title: "micro-ros stm32工程搭建"
 description: "stm32的micro-ros工程搭建"
-pubDate: "Jul 01 2024"
-image: /image/image3.jpg
+pubDate: "Jan 13 2025"
 categories:
   - tech
 tags:
-  - Makrdown
+  - ros
+  - stm32
 badge: Pin
 ---
-###### micro-ros库编译
+# micro-ros库编译
 
 **ros版本：humble**
 
@@ -33,7 +33,7 @@ set(FLAGS "-O2 -ffunction-sections -fdata-sections -fno-exceptions -mcpu=cortex-
 docker pull microros/micro_ros_static_library_builder:humble docker run -it --rm -v $(pwd):/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library microros/micro_ros_static_library_builder:humble 
 ```
 
-###### 工程创建
+# 工程创建
 
 **创建STM32CubeMX项目选择芯片为喜欢的芯片**
 
