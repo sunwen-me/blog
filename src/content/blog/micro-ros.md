@@ -29,7 +29,9 @@ set(FLAGS "-O2 -ffunction-sections -fdata-sections -fno-exceptions -mcpu=cortex-
 
 **接着在micro_ros_stm32cubemx_utils文件夹外输入**
 
-**docker pull microros/micro_ros_static_library_builder:humble docker run -it --rm -v $(pwd):/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library microros/micro_ros_static_library_builder:humble **
+```
+docker pull microros/micro_ros_static_library_builder:humble docker run -it --rm -v $(pwd):/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library microros/micro_ros_static_library_builder:humble 
+```
 
 ###### 工程创建
 
