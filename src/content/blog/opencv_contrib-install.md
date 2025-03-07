@@ -2,7 +2,6 @@
 title: opencv_contrib的安装
 description: opencv_contrib的安装教程
 pubDate: 3 3 2025
-image: /image/image4.jpg
 categories:
   - opencv
 ---

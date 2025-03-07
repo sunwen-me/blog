@@ -2,7 +2,6 @@
 title: ros2与conda环境
 description: ros2与conda环境的配置与使用
 pubDate: 3 7 2025
-image: /image/image4.jpg
 categories:
   - ros
   - python

@@ -2,12 +2,10 @@
 title: ceres库源码安装
 description: ceres库源码安装
 pubDate: 3 3 2025
-image: /image/image4.jpg
 categories:
   - ros
   - slam
 ---
-
 # 1.安装需要的库
 
 ```
