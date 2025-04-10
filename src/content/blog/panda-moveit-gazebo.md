@@ -8,5 +8,5 @@ categories:
 gazebo报错Unable to find file with URI
 
 ```
-export GZ_SIM_RESOURCE_PATH=/home/rydb/Projects/ROS2_easy/src:
+export GZ_SIM_RESOURCE_PATH=/home/sw/Develop/dev_ws/src/panda_ign_moveit2:
 ```

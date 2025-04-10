@@ -17,8 +17,8 @@ alias activate="source /home/sw/Software/miniconda3/bin/activate"
 如果没有使用 anaconda 的可执行文件，那么可以尝试添加：
 
 ```python
-[build_scripts] \
-executable=/usr/bin/env python3
+[build_scripts] 
+executable=/home/sw/Software/anaconda/envs/yolo_ros/bin/python3
 ```
 
 到包中的文件。`setup.cfg`
