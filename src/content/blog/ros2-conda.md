@@ -22,3 +22,8 @@ executable=/home/sw/Software/anaconda/envs/yolo_ros/bin/python3
 ```
 
 到包中的文件。`setup.cfg`
+
+
+```
+conda install -c conda-forge gcc=12.1.0
+```
