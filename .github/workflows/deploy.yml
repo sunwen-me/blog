@@ -43,5 +43,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            pm2 restart blog
-            echo "Deploy finished222!"
+            sudo nginx -t && sudo nginx -s reload
+            echo "🚀 Deploy finished!"
