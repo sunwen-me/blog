@@ -44,4 +44,4 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             pm2 restart blog
-            echo "Deploy finished!"
+            echo "Deploy finished222!"
