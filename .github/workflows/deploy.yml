@@ -43,6 +43,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            # 如果你需要重启服务器上的服务，比如 pm2 重启
-            # pm2 restart your-app
+            pm2 restart blog
             echo "Deploy finished!"
