@@ -1,7 +1,7 @@
 ---
 title: panda在gazebo仿真
-description: 
-pubDate: 26 3 2025
+description: panda的gazebo仿真问题
+pubDate: 3 26 2025
 categories:
   - ros
 ---
