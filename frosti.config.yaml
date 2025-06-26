@@ -57,7 +57,7 @@ site:
       target: _self
     - id: contact
       text: Contact
-      href: "mailto:contact.tosb@tosb.cn"
+      href: "mailto:tosb@tosb.cn"
       target: _blank # 在新标签页打开
       svg: "material-symbols:attach-email-outline-rounded"
 
