@@ -1,11 +1,10 @@
 ---
 title: C++ 懒加载
 description: 常规问题
-pubDate: 6 14 2025
+pubDate: 6 14 2024
 categories:
   - c++
 ---
-
 # 💡 C++ 懒加载（Lazy Initialization）全解析：原理、用法与适用场景
 
 在系统设计中，“懒加载（Lazy Initialization）”是一种非常常见且实用的技术手段。尤其在 C++ 中，它经常用于优化资源管理、提高程序启动效率，并在设计模式中大放异彩，比如**单例模式（Singleton）**。
@@ -58,7 +57,6 @@ private:
   Resource& operator=(const Resource&) = delete;
 };
 ```
-
 
 ## ⚠️ 懒加载不适合的场景
 
